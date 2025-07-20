@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+
+        android:id="@+id/heading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Rock Paper Scissor Game : )"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        style="@style/default_text_style"
+        />
+
+    <EditText
+        android:id="@+id/usernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Your name..."
+        android:maxLength="10"
+        android:ems="10"
+        android:layout_marginTop="100dp"
+        android:drawableStart="@drawable/user"
+        android:drawableTint="?android:textColor"
+        android:textAlignment="center"
+        android:paddingVertical="20dp"
+/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/singlePlayerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Single Player"
+        android:layout_marginTop="150dp"
+        android:textSize="16sp"
+        style="@style/default_text_style"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/singleplayer"
+        android:textStyle="bold"
+        android:drawableTint="?android:textColor"
+
+        android:paddingHorizontal="45dp"
+        android:paddingVertical="20dp"
+        android:layout_gravity="center"
+        />
+
+</LinearLayout>
