@@ -28,8 +28,8 @@ EditText usernameInput;
         });
         iNext = new Intent(MainActivity.this , SinglePlayer.class);
         singlePlayerButton = findViewById(R.id.singlePlayerBtn);
-        usernameInput = findViewById(R.id.usernameText);
-        iNext.putExtra("userName" , usernameInput.getText());
+//        usernameInput = findViewById(R.id.usernameText);
+//        iNext.putExtra("userName" , usernameInput.getText());
 
         singlePlayerButton.setOnClickListener(new View.OnClickListener() {
             @Override

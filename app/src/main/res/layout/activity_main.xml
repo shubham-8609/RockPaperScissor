@@ -10,44 +10,43 @@
     tools:context=".MainActivity">
 
     <TextView
-
         android:id="@+id/heading_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to Rock Paper Scissor Game : )"
-        android:textSize="20sp"
-        android:layout_marginTop="40dp"
+        android:text=" Rock Paper Scissor Game : )"
+        android:textSize="@dimen/_18ssp"
+        android:layout_marginTop="@dimen/_30sdp"
         style="@style/default_text_style"
         />
 
-    <EditText
-        android:id="@+id/usernameText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Your name..."
-        android:maxLength="10"
-        android:ems="10"
-        android:layout_marginTop="100dp"
-        android:drawableStart="@drawable/user"
-        android:drawableTint="?android:textColor"
-        android:textAlignment="center"
-        android:paddingVertical="20dp"
-/>
+<!--    <EditText-->
+<!--        android:id="@+id/usernameText"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Your name..."-->
+<!--        android:maxLength="10"-->
+<!--        android:ems="10"-->
+<!--        android:layout_marginTop="@dimen/_100sdp"-->
+<!--        android:drawableStart="@drawable/user"-->
+<!--        android:drawableTint="?android:textColor"-->
+<!--        android:textAlignment="center"-->
+<!--        android:paddingVertical="@dimen/_20sdp"-->
+<!--        />-->
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/singlePlayerBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Single Player"
-        android:layout_marginTop="150dp"
-        android:textSize="16sp"
+        android:layout_marginTop="@dimen/_150sdp"
+        android:textSize="@dimen/_14ssp"
         style="@style/default_text_style"
-        android:drawablePadding="10dp"
+        android:drawablePadding="@dimen/_10sdp"
         android:drawableStart="@drawable/singleplayer"
         android:textStyle="bold"
         android:drawableTint="?android:textColor"
-
-        android:paddingHorizontal="45dp"
-        android:paddingVertical="20dp"
+        android:paddingHorizontal="@dimen/_30sdp"
+        android:paddingVertical="@dimen/_15sdp"
         android:layout_gravity="center"
         />
 

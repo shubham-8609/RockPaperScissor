@@ -5,7 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:orientation="vertical"
-
     android:layout_height="match_parent"
     tools:context=".SinglePlayer">
 
@@ -14,9 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-
-        android:textSize="23sp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_22ssp"
         android:text="Play Against  Computer ! "
         style="@style/default_text_style"
         />
@@ -25,14 +23,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/_20sdp"
         android:layout_gravity="center_horizontal">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-        android:orientation="vertical"
-            android:layout_marginHorizontal="30dp"
+            android:orientation="vertical"
             >
             <TextView
                 android:id="@+id/won_score_text"
@@ -40,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:text="Won:"
                 style="@style/default_text_style"
-                android:textSize="21sp"
+                android:textSize="@dimen/_21ssp"
                 />
             <TextView
                 android:id="@+id/won_score_value"
@@ -49,14 +46,13 @@
                 android:text="0"
                 style="@style/default_text_style"
                 android:layout_gravity="center"
-                android:textSize="22sp"/>
+                android:textSize="@dimen/_22ssp"/>
 
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
-
+            android:layout_marginHorizontal="@dimen/_20sdp"
             android:orientation="vertical">
 
             <TextView
@@ -65,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:text="Drawn:"
                 style="@style/default_text_style"
-                android:textSize="21sp"
+                android:textSize="@dimen/_21ssp"
                 />
             <TextView
                 android:id="@+id/draw_score_value"
@@ -74,16 +70,13 @@
                 android:text="0"
                 style="@style/default_text_style"
                 android:layout_gravity="center"
-
-                android:textSize="22sp"/>
+                android:textSize="@dimen/_22ssp"/>
 
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginHorizontal="30dp"
-
             >
             <TextView
                 android:id="@+id/lose_score_text"
@@ -91,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:text="Lose:"
                 style="@style/default_text_style"
-                android:textSize="21sp"
+                android:textSize="@dimen/_21ssp"
                 />
             <TextView
                 android:id="@+id/lose_score_value"
@@ -99,22 +92,17 @@
                 android:layout_height="wrap_content"
                 android:text="0"
                 android:layout_gravity="center"
-
                 style="@style/default_text_style"
-                android:textSize="22sp"/>
+                android:textSize="@dimen/_22ssp"/>
         </LinearLayout>
-
-
-
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/choosing_box"
         android:layout_width="match_parent"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="@dimen/_150sdp"
         android:orientation="vertical"
         android:layout_gravity="center"
-
         android:layout_height="wrap_content">
 
         <LinearLayout
@@ -122,7 +110,6 @@
             android:layout_gravity="center_horizontal"
             android:layout_height="wrap_content"
             >
-
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -130,10 +117,7 @@
                 android:scaleType="center"
                 android:src="@drawable/robot"
                 />
-
         </LinearLayout>
-
-
 
         <TextView
             android:layout_width="wrap_content"
@@ -141,88 +125,70 @@
             android:text="VS"
             android:layout_gravity="center"
             style="@style/default_text_style"
-            android:textSize="40sp"
-
-            android:layout_marginBottom="20dp"/>
+            android:textSize="@dimen/_35ssp"
+            android:layout_marginVertical="@dimen/_10sdp"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_height="wrap_content">
 
-
-
-
-
-
-
-
             <androidx.cardview.widget.CardView
                 android:id="@+id/rock_button"
-                app:cardCornerRadius="60dp"
-
+                app:cardCornerRadius="@dimen/_60sdp"
                 android:layout_width="wrap_content"
-
                 android:layout_height="wrap_content">
-      <ImageView
-          android:layout_width="120dp"
-          android:layout_height="120dp"
-          android:scaleType="center"
-
-          android:src="@drawable/rock"/>
-
+                <ImageView
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:scaleType="center"
+                    android:src="@drawable/rock"/>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/paper_button"
                 android:layout_width="wrap_content"
-                android:layout_marginHorizontal="14dp"
-                app:cardCornerRadius="60dp"
+                android:layout_marginHorizontal="@dimen/_8sdp"
+                app:cardCornerRadius="@dimen/_60sdp"
                 android:layout_height="wrap_content">
-            <ImageView
-          android:layout_width="120dp"
-          android:layout_height="120dp"
-          android:scaleType="center"
-
-          android:src="@drawable/paper"/>
-
-
+                <ImageView
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:scaleType="center"
+                    android:src="@drawable/paper"/>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/scissor_button"
                 android:layout_width="wrap_content"
-                app:cardCornerRadius="60dp"
-
+                app:cardCornerRadius="@dimen/_60sdp"
                 android:layout_height="wrap_content">
-
-        <ImageView
-          android:id="@+id/scissor_image_button"
-          android:layout_width="120dp"
-          android:layout_height="120dp"
-            android:scaleType="center"
-
-          android:src="@drawable/scissor"/>
+                <ImageView
+                    android:id="@+id/scissor_image_button"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:scaleType="center"
+                    android:src="@drawable/scissor"/>
             </androidx.cardview.widget.CardView>
-    </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/result_box"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_50sdp"
         android:visibility="gone"
+        android:orientation="vertical"
         android:layout_gravity="center">
 
         <ImageView
             android:id="@+id/computer_value"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
             android:rotation="180"
             android:scaleType="center"
+            android:layout_gravity="center"
             android:src="@drawable/scissor_big"
             />
 
@@ -232,14 +198,15 @@
             android:layout_height="wrap_content"
             style="@style/default_text_style"
             android:text="Nothing to Show.."
-            android:textSize="30sp"
+            android:textSize="@dimen/_28ssp"
             android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/_5sdp"
             />
         <ImageView
-            android:layout_width="250dp"
+            android:layout_width="@dimen/_150sdp"
             android:id="@+id/user_value"
-            android:layout_marginTop="20dp"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_gravity="center"
             android:src="@drawable/paper_big"
             />
 
@@ -250,15 +217,11 @@
             android:layout_gravity="center"
             android:text="Play Again.."
             style="@style/default_text_style"
-            android:textSize="19sp"
-            android:paddingVertical="20dp"
-            android:paddingHorizontal="30dp"
+            android:textSize="@dimen/_18ssp"
+            android:paddingVertical="@dimen/_15sdp"
+            android:paddingHorizontal="@dimen/_25sdp"
             android:onClick="playAgain"
-            android:layout_marginTop="35dp"/>
+            android:layout_marginTop="@dimen/_20sdp"/>
 
     </LinearLayout>
-
-
-
-
 </LinearLayout>

@@ -9,26 +9,20 @@
     android:layout_height="match_parent"
     tools:context=".SplashActivity">
 
-
-
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:lottie_rawRes="@raw/rps_fast"
         app:lottie_autoPlay="true"
-
-
-
         />
 
     <TextView
         android:id="@+id/credit_text"
         android:layout_width="wrap_content"
-        android:textSize="17sp"
+        android:textSize="@dimen/_17ssp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/allerta_stencil"
         android:text="@string/credit_text"
         android:textStyle="italic" />
-
 
 </LinearLayout>

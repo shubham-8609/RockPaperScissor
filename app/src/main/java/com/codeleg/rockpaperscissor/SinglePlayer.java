@@ -133,21 +133,21 @@ import android.view.animation.AnimationSet;
                 state = 0;
                 resultText.setText("Game Drawn..");
                 drawnCount++;
-                setValues();
+                setValues(state);
 
                 resultText.setTextColor(getResources().getColor(R.color.orange));
 
             }else if((userChoosenOption.equals("rock") && computerChoosenOption.equals("paper"))  || (userChoosenOption.equals("paper") && (computerChoosenOption.equals("scissor"))) || (userChoosenOption.equals("scissor") && computerChoosenOption.equals("rock"))){
                 state = 2;
                 loseCount++;
-                setValues();
+                setValues(state);
                 resultText.setText("You lose..😟🥺");
                 resultText.setTextColor(getResources().getColor(R.color.red));
                // Example: Set background to red for a loss
             }else{
                 state = 1;
                 wonCount++;
-                setValues();
+                setValues(state);
                 resultText.setText("You Won..🥳🎉");
                 resultText.setTextColor(getResources().getColor(R.color.pure_green));
              // Example: Set background to green for a win
@@ -213,10 +213,26 @@ import android.view.animation.AnimationSet;
             choosingBox.startAnimation(scaleAnim);
 
         }
-        void setValues(){
-            wonScoreValue.setText(String.valueOf(wonCount));
+        void setValues(int state){
+            switch (state){
+                case 0:
             drawScoreValue.setText(String.valueOf(drawnCount));
+            drawScoreValue.startAnimation(slideanim);
+            drawScoreValue.setTextColor(getResources().getColor(R.color.orange));
+                    break;
+                case 1:
+            wonScoreValue.setText(String.valueOf(wonCount));
+            wonScoreValue.startAnimation(slideanim);
+                    wonScoreValue.setTextColor(getResources().getColor(R.color.pure_green));
+
+            break;
+                case 2:
             loseScoreValue.setText(String.valueOf(loseCount));
+            loseScoreValue.startAnimation(slideanim);
+            loseScoreValue.setTextColor(getResources().getColor(R.color.red));
+            break;
+
+            }
         }
 
     }
