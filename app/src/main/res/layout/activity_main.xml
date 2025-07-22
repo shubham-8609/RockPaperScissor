@@ -19,19 +19,7 @@
         style="@style/default_text_style"
         />
 
-<!--    <EditText-->
-<!--        android:id="@+id/usernameText"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:hint="Your name..."-->
-<!--        android:maxLength="10"-->
-<!--        android:ems="10"-->
-<!--        android:layout_marginTop="@dimen/_100sdp"-->
-<!--        android:drawableStart="@drawable/user"-->
-<!--        android:drawableTint="?android:textColor"-->
-<!--        android:textAlignment="center"-->
-<!--        android:paddingVertical="@dimen/_20sdp"-->
-<!--        />-->
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/singlePlayerBtn"
